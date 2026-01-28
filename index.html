@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chai Culture | Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    :root {
+      --gold: #c6a15b;
+      --brown: #3b2a1a;
+      --cream: #f8f4ee;
+      --dark: #1e1e1e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #f8f4ee 0%, #f3ede4 100%);
+  color: var(--dark);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+
+    .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 90px 24px 70px;
+  text-align: center;
+  animation: fadeUp 1.2s ease;
+  position: relative;
+  z-index: 2;
+    }
+
+    .hero-divider {
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 40px auto;
+    }
+
+    .heading{
+        display: flex;
+        justify-content: center;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatY {
+        0% {
+            transform: translateY(-50%) translateY(0);
+        }
+        50% {
+            transform: translateY(-50%) translateY(-2px);
+        }
+        100% {
+            transform: translateY(-50%) translateY(2px);
+        }
+    }
+
+
+    .logo {
+      margin-bottom: 20px;
+      margin-right: 30px;
+    }
+
+    .logo img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 60px;
+      align-content: center;
+      color: var(--brown);
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 25px;
+      font-family: 'Baskerville','serif';
+      color: var(--gold);
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .description {
+      font-size: 20px;
+      font-family: 'Cormorant Garamond', serif;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 30px;
+      max-width: 760px;
+      margin: 0 auto 50px;
+    }
+
+    .launch {
+      display: inline-block;
+      padding: 8px 18px;
+      border: 1px solid var(--gold);
+      border-radius: 30px;
+      color: var(--gold);
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+    }
+
+    .email-box {
+      display: flex;
+      gap: 10px;
+      max-width: 520px;
+      margin: 0 auto 60px;
+    }
+
+    .email-box input {
+      flex: 1;
+      padding: 14px 16px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .email-box input:focus {
+      border-color: var(--gold);
+    }
+
+    .email-box button {
+      padding: 14px 22px;
+      border-radius: 8px;
+      border: none;
+      background: var(--brown);
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .email-box button:hover {
+      background: var(--gold);
+      color: #000;
+    }
+    
+    .chai-visual {
+    position: absolute;
+    left: 4%;
+    top: 70%;
+    width: 300px;
+    pointer-events: none;
+    animation: floatY 1.2s ease-in-out infinite alternate;
+    }
+
+    .chai-visual img {
+    width: 100%;
+    opacity: 0.80;
+    filter: sepia(15%) contrast(105%);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+    }
+
+    .socials a {
+      color: var(--brown);
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: var(--gold);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      margin-top: 35px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 30px;
+      }
+      .heading {
+        flex-direction: column;
+      }
+      .chai-visual {
+        display: none;
+      }
+
+      body {
+        padding-left: 0;
+      }
+
+      .logo {
+        margin: 0 0 15px 0;
+      }
+      .email-box {
+        flex-direction: column;
+      }
+
+      .email-box button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <div class="chai-visual">
+        <img src="assets/chai-patti.png" alt="Premium Chai Leaves">
+      </div>
+      
+  <div class="container">
+<div class="heading">
+    <div class="logo">
+      <img src="assets/custom_logo.png" alt="Chai Culture Logo">
+    </div>
+    <h1>Chai Culture</h1>
+</div>
+    <div class="tagline">Brew the Royal Tradition</div>
+
+    <p class="description">
+        Inspired by the chai once brewed in royal Indian homes, our premium instant chai tea premix blends tradition with modern convenience. Every sip delivers a rich, comforting taste 
+       <br> Bold, Fragrant and Unmistakably Royal.    </p>
+
+       <div class="hero-divider"></div>
+
+    <div class="launch">YOUR PERFECT BREW LAUNCHING SOON</div>
+
+    <div class="email-box">
+      <input type="email" placeholder="Enter your email address" />
+      <button>Notify Me</button>
+    </div>
+
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <footer>
+      © 2026 Chai Culture. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
