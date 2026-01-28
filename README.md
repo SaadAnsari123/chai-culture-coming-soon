@@ -59,7 +59,7 @@ Responsive typography and flexible layout ensure consistency across screen sizes
 
 ## 🚀 Live Demo
 
-🔗 **Live Site:** https://your-live-link-here.netlify.app  
+🔗 **Live Site:** https://chai-culture-coming-soon-page.netlify.app/
 
 ---
 
